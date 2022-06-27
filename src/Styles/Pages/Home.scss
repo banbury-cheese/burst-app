@@ -1,0 +1,202 @@
+.hero_section {
+  display: -webkit-flex;
+  display: flex;
+  z-index: 200;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-top: 0vh;
+  width: 100vw;
+  height: 87.556vh;
+  overflow: hidden;
+  text-align: left;
+  text-rendering: optimizeSpeed;
+  -webkit-font-feature-settings: "kern" off;
+  font-feature-settings: "kern" off;
+  -webkit-font-kerning: none;
+  font-kerning: none;
+
+  .wrapper {
+    height: 100%;
+    .hero_section__body {
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      flex-direction: column;
+      .hero_content {
+        flex-grow: 1;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        .hero_content__text {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.hero_title {
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  
+  color: $white;
+  // margin-left: -0.972vw;
+
+  p {
+    margin-top: 2.213vw;
+    width: 50vw;
+    text-transform: none;
+    line-height: 131%;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    font-family: $font-secondary;
+    font-size: 1.628vw;
+    font-size: max(17px, 1.628vw);
+
+    span {
+      font-weight: 800;
+    }
+  }
+}
+
+.hero_JoinWaitlistForm {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 3.2vw;
+  font-size: 1.5vw;
+  color: $black;
+
+  span {
+    text-transform: none;
+    line-height: 131%;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    font-family: $font-secondary;
+    font-size: 1.628vw;
+    color: $white;
+    font-size: max(17px, 1.628vw);
+  }
+
+  // display: flex;
+  form {
+    position: relative;
+    margin-top: 0.432vw;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  input {
+    padding: 1% 2%;
+    width: 90%;
+    margin: 0 2vw;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background: transparent;
+    outline: none !important;
+
+    &::placeholder {
+      font-size: 1.5vw;
+      color: $black;
+      letter-spacing: 0.02em;
+      font-family: $font-secondary;
+      font-size: 1.2vw;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    outline: none;
+    height: 100%;
+    padding: 0.972vw 1.944vw;
+    background: $black;
+    font-family: $font-secondary;
+    color: $white;
+    letter-spacing: 0.02em;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    font-size: 1.2vw;
+    font-size: max(15px, 1.2vw);
+    overflow: hidden;
+    line-height: 1;
+    width: 20%;
+  }
+}
+
+.hero_content__cards {
+  display: grid;
+  width: 30vw;
+  grid-auto-columns: 1fr;
+  height: 30vw;
+  gap: 1vw;
+  margin-inline: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  .hero_content__card {
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+    border-radius: 0.78vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vw;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: max(17px, 1.328vw);
+    span {
+      font-weight: 500;
+      font-size: 1vw;
+    }
+  }
+  .card_1 {
+    grid-row: span 2 / auto;
+  }
+  .card_2 {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+  }
+  .card_3 {
+    grid-column: span 3 / auto;
+  }
+}
+
+#hero_card__yourBalance{
+  svg{
+    width: 100%;
+    align-self: center;
+  }
+  #hero_card__yourBalance__amount{
+    font-size: 1.5vw;
+    span{
+      opacity: 0.7;
+    }
+  }
+  div{
+    display: flex;
+    gap: 5px;
+    background-color: #79F265;
+    width: fit-content;
+    font-size: 1.1vw;
+    border-radius: 50px;
+    padding: 3px 10px;
+    align-items: center;
+    svg{
+      width: 90%;
+      align-self: center;
+    }
+  }
+}
